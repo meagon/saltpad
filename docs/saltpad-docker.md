@@ -1,30 +1,7 @@
 # SaltPad docker
 
+Saltpad includes both a Dockerfile for creating a saltpad docker image and a docker-compose environement for you to play with.
 
-This will build a docker container to run saltpad in. It will use the file ```settings.json``` to configure
-the container.
-
-**Note: This will need more work to run in production, for now - only use for development.**
-
-**Note: This will not setup your salt-master's salt-api or other requisites to be able to talke to salt, it only runs SaltPad. If you need a salt-api and salt-master for testing scroll down to saltpad with docker-compose**
-
-## Build
-
-You can build a saltpad image which will package the current version of the code located on your copy of this repository.
-
-**Don't forget to create the ```settings.json``` file first**
-
-```
-docker build -t name/saltpad:latest .
-```
-
-## Run
-
-After building it, you can launch it with this command:
-
-```
-docker run -p 3333:3333 name/saltpad:latest
-```
 
 # Saltpad with docker-compose
 
@@ -72,3 +49,30 @@ The configuration is the same than the one on develop version, but it can help y
 Please refer to the main README for more informations on the subject.
 
 Uncomment the right ```dockerfile``` line in docker-compose.yml (the one actually commented), build the docker images with ```docker-compose build```, launch them with ```docker-compose up``` then access ```http://localhost:8000/saltpad``` to have access to saltpad.
+
+# Saltpad docker image
+
+The dockerfile will build a docker container to run saltpad in. It will use the file ```settings.json``` to configure
+the container.
+
+**Note: This will need more work to run in production, for now - only use for development.**
+
+**Note: This will not setup your salt-master's salt-api or other requisites to be able to talke to salt, it only runs SaltPad. If you need a salt-api and salt-master for testing scroll up to saltpad with docker-compose**
+
+## Build
+
+You can build a saltpad image which will package the current version of the code located on your copy of this repository.
+
+**Don't forget to create the ```settings.json``` file first**
+
+```
+docker build -t name/saltpad:latest .
+```
+
+## Run
+
+After building it, you can launch it with this command:
+
+```
+docker run -p 3333:3333 name/saltpad:latest
+```
