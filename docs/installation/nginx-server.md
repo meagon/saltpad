@@ -19,6 +19,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server ipv6only=on;
 
+    # Saltpad specific
     root /code/saltpad/;
     index index.html;
 
@@ -77,4 +78,4 @@ The output should match the content of the `settings.json` file you deployed ear
 
 Now it's unlickely that you have a browser on the salt-master so congratulations you now have a saltpad installation only accessible from your salt-master machine.
 
-We will change that and allow you to access saltpad from your browser in the [next part](saltpad-across-internet.md).
+We will change that and allow you to access saltpad from your browser in the [next part](nginx-across-internet-cors.md).

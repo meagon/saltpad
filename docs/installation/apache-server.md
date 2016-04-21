@@ -19,6 +19,10 @@ If you have extracted saltpad to the directory `/code/saltpad`, a very basic apa
   ServerName saltpad.example.com
   ServerAdmin webmaster@example.com
   LogLevel warn
+  ErrorLog "/var/log/apache2/saltpad-error.log"
+  CustomLog "/var/log/apache2/saltpad-access.log" combined
+
+  # Saltpad specific
   DocumentRoot /code/saltpad
   <Directory "/code/saltpad">
     RewriteEngine On
@@ -29,8 +33,7 @@ If you have extracted saltpad to the directory `/code/saltpad`, a very basic apa
     RewriteRule (.*) /index.html [L]
     #FallbackResource /index.html
   </Directory>
-  ErrorLog "/var/log/apache2/saltpad-error.log"
-  CustomLog "/var/log/apache2/saltpad-access.log" combined
+
 </VirtualHost>
 ```
 
@@ -83,4 +86,4 @@ The output should match the content of the `settings.json` file you deployed ear
 
 Now it's unlickely that you have a browser on the salt-master so congratulations you now have a saltpad installation only accessible from your salt-master machine.
 
-We will change that and allow you to access saltpad from your browser in the [next part](saltpad-across-internet.md).
+We will change that and allow you to access saltpad from your browser in the [next part](apache-across-internet-cors.md).

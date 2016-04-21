@@ -10,6 +10,7 @@ __This version of saltpad is a full-rewrite as a single app page. The old versio
  - [Requirements](requirements.md)
  - [Installation](installation.md)
  - [Update](update.md)
+ - [Advanced configuration](advanced_configuration.md)
  - [Contribute](contribute.md)
  - [Limitations](limitations.md)
  - [Security](security.md)
