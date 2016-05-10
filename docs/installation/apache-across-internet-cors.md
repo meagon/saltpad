@@ -179,4 +179,4 @@ You'll need to change `API_URL` to match the DNS of your salt-api server (in our
 
 If you enabled ssl, you'll also need to set `SECURE_HTTP` to `true` or saltpad will try to connect over a non encrypted connection.
 
-You don't need to reload the webserver, just save the `settings.json` file and go at `http://SALTPAD.YOURDNS/` or `https://SALTPAD.YOURNDS/` to access Saltpad and start mastering your salt-api.
+You don't need to reload the webserver, just save the `settings.json` file and go at `http://SALTPAD.YOURDNS/` or `https://SALTPAD.YOURNDS/` to access Saltpad and start mastering your Saltstack environment.

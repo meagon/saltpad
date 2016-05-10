@@ -45,6 +45,6 @@ Saltpad works with rest-cherrypy 2015.8.8 with a specific deployment options, fo
 
 With a develop version, rest_tornado should be compatible with the most simple deployment option, please follow [these instructions to configure salt-api with rest_tornado](salt-api-tornado-cors.md).
 
-## Salt develop, rest_cherrpy
+## Salt develop, rest_cherrypy
 
-With a develop version, rest_tornado should be compatible with the most simple deployment option, please follow [these instructions to configure salt-api with rest_tornado](salt-api-cherrypy-cors.md).
+With a develop version, rest_tornado should be compatible with the most simple deployment option, please follow [these instructions to configure salt-api with rest_cherrypy](salt-api-cherrypy-cors.md).
