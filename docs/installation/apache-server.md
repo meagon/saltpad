@@ -39,23 +39,21 @@ If you have extracted saltpad to the directory `/code/saltpad`, a very basic apa
 
 Note: the much simpler 'FallbackResource' which does not require mod_rewrite, requires apache/httpd version >= 2.2.16.
 
-You can put this configuration and replace the content of the file "/etc/nginx/sites-enabled/default" or ask your system administrator to configure Nginx.
-
 Enable the site and reload apache:
 ```bash
 sudo a2ensite saltpad
 sudo service apache2 reload
 ```
 
-__Warning, the previous example configurations ARE NOT SUITABLE for production, you'll need to configure ssl for production environment so don't open the webserver to the whole web yet, we will configure ssl later.__
+__Warning, the previous example configurations ARE NOT SUITABLE for production, you will need to configure ssl for production environment so don't open the webserver to the whole web yet, we will configure ssl later.__
 
-You'll need to change the root path if you deployed saltpad elsewhere and the server_name to point to the DNS name of your salt-master.
+You will need to change the root path if you deployed saltpad elsewhere and the server_name to point to the DNS name of your salt-master.
 
 ## Check configuration
 
 We can now check that everything should works correctly.
 
-Check that nginx serves saltpad correclty:
+Check that apache serves saltpad correclty:
 
 ```
 curl http://localhost/
@@ -76,7 +74,7 @@ Expected output:
 </html>
 ```
 
-Check that nginx serves saltpad config file correctly:
+Check that apache serves saltpad config file correctly:
 
 ```
 curl http://localhost/static/settings.json

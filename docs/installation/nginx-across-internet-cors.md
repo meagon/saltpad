@@ -80,7 +80,7 @@ server {
 }
 ```
 
-You'll need a ssl certificate for activating ssl, you can either buy one, generate one or use [let's encrypt](https://letsencrypt.org/) for generating one.
+You will need a ssl certificate for activating ssl, you can either buy one, generate one or use [let's encrypt](https://letsencrypt.org/) for generating one.
 
 In the configuration above, the saltpad configuration is left blank (...), it's because it's not ssl dependent, please see below for the saltpad / salt-api configuration.
 
@@ -173,8 +173,8 @@ curl http://localhost:8000/ # Salt-api port
 
 Now that your salt-api instance is accessible from internet (don't forget to open the port and whitelist your IPs if necessary), we need to tweak the saltpad configuration a little.
 
-You'll need to change `API_URL` to match the DNS of your salt-api server (in our example it was `SALTPAD.YOURDNS`).
+You will need to change `API_URL` to match the DNS of your salt-api server (in our example it was `SALTPAD.YOURDNS`).
 
-If you enabled ssl, you'll also need to set `SECURE_HTTP` to `true` or saltpad will try to connect over a non encrypted connection.
+If you enabled ssl, you will also need to set `SECURE_HTTP` to `true` or saltpad will try to connect over a non encrypted connection.
 
 You don't need to reload the webserver, just save the `settings.json` file and go at `http://SALTPAD.YOURDNS/` or `https://SALTPAD.YOURNDS/` to access Saltpad and start mastering your Saltstack environment.

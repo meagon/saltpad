@@ -1,6 +1,6 @@
 # Saltpad installation
 
-Here is the documentation you'll need to follow if you want to launch saltpad either for playing around with saltpad or using it on your production system.
+Here is the documentation you will need to follow if you want to launch saltpad either for playing around with saltpad or using it on your production system.
 
 ## Playing with saltpad
 

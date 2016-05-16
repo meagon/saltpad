@@ -44,7 +44,7 @@ docker-compose run
 
 There is an alternative Docker image that use salt-api stable instead of develop version.
 
-The configuration is the same than the one on develop version, but it can help you test saltpad against a stable version of salt-api. For now, only the rest_cherrypy deployment works against the stable version, so you need to put ```localhost:8000``` for ```API_URL``` and ```/saltpad/``` for ```PATH_PREFIX``` in your file ```settings.json```. You'll also need to build saltpad first, using the command ```npm run build```.
+The configuration is the same than the one on develop version, but it can help you test saltpad against a stable version of salt-api. For now, only the rest_cherrypy deployment works against the stable version, so you need to put ```localhost:8000``` for ```API_URL``` and ```/saltpad/``` for ```PATH_PREFIX``` in your file ```settings.json```. You will also need to build saltpad first, using the command ```npm run build```.
 
 Please refer to the main README for more informations on the subject.
 

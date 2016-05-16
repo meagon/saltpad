@@ -23,7 +23,7 @@ They're defined under the `templates` key in settings.json file with the followi
 },
 ```
 
-The templates should appears on `/job/template` url in the templates page.
+The templates should appear on `/job/template` url in the templates page.
 
 ## Path prefix
 

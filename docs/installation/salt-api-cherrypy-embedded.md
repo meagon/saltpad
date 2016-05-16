@@ -1,6 +1,6 @@
 # Salt-api rest_cherrypy, version 2015.8.8
 
-Saltpad could works with rest_cherrypy version 2015.8.8 in a very specific manner.
+Saltpad could work with rest_cherrypy version 2015.8.8 in a very specific manner.
 
 ## Rest_cherrypy installation
 
@@ -19,7 +19,7 @@ rest_cherrypy:
 
 __Warning, this configuration has ssl disabled and it only listens to localhost, if you want to expose the salt-api to the network, you should really deploy it behind nginx with ssl, do not change the host to 0.0.0.0 without proper ssl support as well! It's documented later how to proper deploy ssl for protecting the salt-api, for the moment doesn't touch the host nor disable_ssl.__
 
-Theses lines to be located inside your salt-master configuration.
+These lines to be located inside your salt-master configuration.
 
 You can now launch the salt-api, either manually:
 
@@ -77,9 +77,9 @@ If the output includes "HTTP/1.1 401 Unauthorized", double-check the rest_cherry
 
 ## Rest_cherrypy configuration for saltpad
 
-For deploying saltpad, you'll now need to choose both a directory where saltpad will be saltpad will be deployed and an URL prefix it will be available on.
+For deploying saltpad, you will now need to choose both a directory where saltpad will be saltpad will be deployed and an URL prefix it will be available on.
 
-For example, if you choose to deploy saltpad on `/code/saltpad` directory and use the `/saltpad` URL prefix (meaning the saltpad will be accessible on `http://YOUSALTAPI.com/saltpad/`), you'll need to update the rest_cherrypy like this:
+For example, if you choose to deploy saltpad on `/code/saltpad` directory and use the `/saltpad` URL prefix (meaning the saltpad will be accessible on `http://YOUSALTAPI.com/saltpad/`), you will need to update the rest_cherrypy like this:
 
 ```
 rest_cherrypy:
@@ -101,7 +101,7 @@ Restart your salt-api and let's install saltpad now.
 
 ## Saltpad installation
 
-Released versions are available on github (https://github.com/Lothiraldan/saltpad/releases). You'll need to download the latest version of saltpad from production:
+Released versions are available on github (https://github.com/Lothiraldan/saltpad/releases). You will need to download the latest version of saltpad from production:
 
 ```
 wget https://github.com/Lothiraldan/saltpad/releases/download/v0.3.1/dist.zip

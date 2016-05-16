@@ -21,7 +21,7 @@ rest_tornado:
 
 __Warning, this configuration has ssl disabled and it only listens to localhost, if you want to expose the salt-api to the network, you should really deploy it behind nginx with ssl, do not change the host to 0.0.0.0 without proper ssl support as well! It's documented later how to proper deploy ssl for protecting the salt-api, for the moment doesn't touch the host nor disable_ssl.__
 
-Theses lines to be located inside your salt-master configuration.
+These lines to be located inside your salt-master configuration.
 
 You can now launch the salt-api, either manually:
 
@@ -75,7 +75,7 @@ If the output includes "HTTP/1.1 401 Unauthorized", double-check the rest_tornad
 
 ## Saltpad installation
 
-Released versions are available on github (https://github.com/Lothiraldan/saltpad/releases). You'll need to download the latest version of saltpad from production:
+Released versions are available on github (https://github.com/Lothiraldan/saltpad/releases). You will need to download the latest version of saltpad from production:
 
 ```bash
 wget https://github.com/Lothiraldan/saltpad/releases/download/v0.3.1/dist.zip

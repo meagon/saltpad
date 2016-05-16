@@ -18,7 +18,7 @@ SaltPad will be available on localhost:3333(localhost:3333).
 
 # Release saltpad
 
-If an any time you want to generate a new release and as a reminder for core-developper, here is how you can generate a dist.zip:
+If an any time you want to generate a new release and as a reminder for core-developer, here is how you can generate a dist.zip:
 
 ```bash
 npm run build

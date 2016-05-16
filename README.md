@@ -17,7 +17,7 @@ A walkthrough using screenshots is available in the screenshots directory (not u
 * Launch jobs.
 * Access jobs details easily.
 * Save job configuration as templates and launch them with one click on a button.
-* Quick debug minion, get all usefull information in one place.
+* Quick debug minion, get all useful information in one place.
 
 ## Installation and documentation
 

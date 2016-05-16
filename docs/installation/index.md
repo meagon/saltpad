@@ -1,6 +1,6 @@
 # Saltpad production installation
 
-Please follow this documentation step by step to finalize the saltpad + salt-api installation and configuration.
+Please follow this documentation step-by-step to finalize the saltpad + salt-api installation and configuration.
 
 You have several solutions to install saltpad, but before installing saltpad, you need to install and configure salt-api.
 
@@ -16,7 +16,7 @@ sudo apt-get install salt-api
 
 Salt-api leverage the [external auth](https://docs.saltstack.com/en/latest/topics/eauth/access_control.html) system to authenticate and allow users to run commands against the salt-master.
 
-A full-access access for user `bob` might looks like:
+A full-access access for user `bob` might look like:
 
 ```yaml
 external_auth:
@@ -27,7 +27,7 @@ external_auth:
           - '@wheel'
 ```
 
-Currently SaltPad requires exactly these permissions, for various reasons. There is ongoing improvements on SaltStack part and in Saltpad to require less permissions. Saltpad will not allows you to connect if you don't have this set of permissions and will show you an error message.
+Currently SaltPad requires exactly these permissions, for various reasons. There is ongoing improvements on SaltStack part and in Saltpad to require less permissions. Saltpad will not allow you to connect if you don't have this set of permissions and will show you an error message.
 
 ## Salt-api configuration
 
@@ -35,7 +35,7 @@ As explains in [requirements](../requirements.md), saltpad has some dependencies
 
 If you have already a salt-api installed and configured, follow instructions matching your salt-api implementation and salt-master version below.
 
-If you don't have actually a salt-api configured, I recommend you to follow the instructions for rest-cherrypy, salt 2015.8.8 as putting a develop version of saltstack is a very bad idea.
+If you don't have actually a salt-api configured, I recommend that to follow the instructions for rest-cherrypy, salt 2015.8.8 as putting a develop version of saltstack is a very bad idea.
 
 ## Rest-cherrypy, salt 2015.8.8
 

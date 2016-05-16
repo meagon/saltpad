@@ -39,9 +39,9 @@ Now reload the webserver:
 sudo /etc/init.d/nginx reload
 ```
 
-__Warning, the previous example configurations ARE NOT SUITABLE for production, you'll need to configure ssl for production environment so don't open the webserver to the whole web yet, we will configure ssl later.__
+__Warning, the previous example configurations ARE NOT SUITABLE for production, you will need to configure ssl for production environment so don't open the webserver to the whole web yet, we will configure ssl later.__
 
-You'll need to change the root path if you deployed saltpad elsewhere and the server_name to point to the DNS name of your salt-master.
+You will need to change the root path if you deployed saltpad elsewhere and the server_name to point to the DNS name of your salt-master.
 
 ## Check configuration
 

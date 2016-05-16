@@ -14,15 +14,15 @@ Anyway Saltpad has been tested with SaltStack 2015.8.8+ so you require at least 
 
 ## Job cache
 
-Saltpad retrieve past job result by using the [jobs runner](https://docs.saltstack.com/en/latest/ref/runners/all/salt.runners.jobs.html). By default, the salt-master store job output on disk but you may change it by setting the [master job cache setting key](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html).
+Saltpad retrieve past job result by using the [jobs runner](https://docs.saltstack.com/en/latest/ref/runners/all/salt.runners.jobs.html). By default, the salt-master store job output on disk, but you may change it by setting the [master job cache setting key](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html).
 
-As Saltpad interact with the salt-master throught the salt-api, you'll need to use a [master job cache](https://docs.saltstack.com/en/latest/topics/jobs/external_cache.html#master-job-cache-master-side-returner) if you want to store job output in a DB for example.
+As Saltpad interact with the salt-master through the salt-api, you will need to use a [master job cache](https://docs.saltstack.com/en/latest/topics/jobs/external_cache.html#master-job-cache-master-side-returner) if you want to store job output in a DB for example.
 
 Not [all returners](https://docs.saltstack.com/en/latest/ref/returners/all/index.html#all-salt-returners) are equals, [some](https://docs.saltstack.com/en/latest/ref/returners/all/salt.returners.smtp_return.html#module-salt.returners.smtp_return) will send some message and forget about the job and [others](https://docs.saltstack.com/en/latest/ref/returners/all/salt.returners.postgres_local_cache.html#module-salt.returners.postgres_local_cache) will store job output in a more permanent matters.
 
 When using a returner that send job output by sms, slack, email..., saltpad has now way to retrieve it later.
 
-You can test it your configured returner store job output or not, launch this command on your salt-master (this can takes some times!):
+You can test it your configured returner store job output or not, launch this command on your salt-master (this can take some times!):
 
 ```
 salt-run jobs.list_jobs
@@ -37,21 +37,21 @@ Saltstack has two netapi implementation:
  - [rest_cherrypy](https://docs.saltstack.com/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html), the more mature implementation.
  - [rest_tornado](https://docs.saltstack.com/en/latest/ref/netapi/all/salt.netapi.rest_tornado.html), the more recent but faster implementation.
  
-As rest_tornado is more recent, they're not feature equals and depending of your netapi implemenation saltpad might requires different saltstack version.
+As rest_tornado is more recent, they're not feature equals and depending of your netapi implementation saltpad might requires different saltstack version.
 
 ### Rest-tornado
 
-Rest-tornado until recently lacks some features required for Saltpad to run. At this time, the changes have been merged to develop branch, but not merged to a stable version __yet__, so if you want to use rest-tornado right now with saltpad you'll need a develop version of salt-master.
+Rest-tornado until recently lacks some features required for Saltpad to run. At this time, the changes have been merged to develop branch, but not merged to a stable version __yet__, so if you want to use rest-tornado right now with saltpad you will need a develop version of salt-master.
 
-Theses changes should lands in the future 2016.3 release, be patient!
+These changes should lands in the future 2016.3 release, be patient!
 
-__I do not recommend to install a develop version of SaltStack on your production system!__
+__I do not recommend installing a develop version of SaltStack on your production system!__
 
 ### Rest-cherrypy
 
-Rest-cherrypy implementation could works with saltpad in version 2015.8.8 but requires some specific deployement process detailled later.
+Rest-cherrypy implementation could work with saltpad in version 2015.8.8 but requires some specific deployment process detailled later.
 
-If you want the most easy deployment, you'll need a develop version of your salt-master but saltpad could be deployed with a 2015.8.8 version of rest_cherrypy
+If you want the most easy deployment, you will need a develop version of your salt-master but saltpad could be deployed with a 2015.8.8 version of rest_cherrypy
 
 ## Compatiblity table
 
