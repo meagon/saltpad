@@ -9,7 +9,7 @@ class SaltLowStateService {
             params,
             {headers: {"X-Auth-Token": store.get(['auth', 'token']),
                        "Content-Type": "application/x-www-form-urlencoded"},
-             transformRequest: (data) => formurlencoded.encode(data)});
+             transformRequest: (data) => formurlencoded(data)});
         return query;
     }
 }
